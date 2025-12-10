@@ -1,0 +1,157 @@
+/* Custom CSS for Fiberworld Communication Pvt. Ltd. */
+:root {
+    --primary-color: #007bff; /* Bootstrap's primary blue */
+    --secondary-color: #6c757d;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    background-color: var(--light-bg);
+}
+
+.navbar-brand img {
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+/* Hero Section for internal pages */
+.page-hero-section {
+    position: relative;
+    height: 350px; /* Shorter hero for internal pages */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1579762715118-a6411550c655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+            no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-bottom: 50px; */
+}
+
+.page-hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.page-hero-section p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Styling */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Report Form Card */
+.report-form-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.report-form-card .form-label {
+    font-weight: 500;
+    color: #444;
+}
+
+/* Alert Box */
+.alert-info {
+    background-color: #e0f2f7; /* Light blue */
+    border-color: #b3e5fc;
+    color: #01579b; /* Darker blue text */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.alert-info .bi {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* Call to Action */
+.cta-section {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+.cta-section .btn {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 50px 0 20px 0;
+    font-size: 0.9rem;
+}
+
+footer .footer-brand img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+footer h5 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}

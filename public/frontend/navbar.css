@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --text-dark: #343a40;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand .logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+    letter-spacing: -0.5px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 400;
+    color: var(--text-dark) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    border: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dropdown-menu .dropdown-item {
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--light-bg, #f8f9fa);
+    color: var(--primary-color);
+}
+
+/* Navbar Button */
+.navbar .btn-primary {
+    	color: #fff;
+    background-color: #004494;
+    border-color: #004494;
+	box-shadow: 0 4px 6px rgba(55, 130, 146, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #004494;
+    border-color: #004494;
+    transform: translateY(-2px);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 992px) {
+    .navbar-brand .logo-text {
+        font-size: 1.4rem;
+    }
+
+    .navbar .btn-primary {
+        padding: 8px 20px;
+    }
+}
+
+/* Navbar link hover and active styles */
+.navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-link:hover {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Active link highlight */
+.navbar .nav-link.active {
+    color: #0056b3 !important;
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Dropdown hover */
+.dropdown-item:hover {
+    background-color: #f0f7ff;
+    color: #0056b3;
+}
+
+/* Optional: make active dropdown item highlighted */
+.dropdown-item.active {
+    background-color: #e9f3ff;
+    color: #0056b3;
+    font-weight: 600;
+}

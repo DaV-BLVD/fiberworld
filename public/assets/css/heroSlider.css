@@ -1,0 +1,233 @@
+/* ==========================
+   Fiberworld Hero Slider
+   Fully Responsive Version
+   ========================== */
+
+/* Root Variables */
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --accent-color: #28a745;
+    --light-bg: #f2f7ff;
+    --dark-bg: #212529;
+    --text-dark: #343a40;
+    --text-light: #f8f9fa;
+    --gradient-start: #007bff;
+    --gradient-end: #0056b3;
+}
+
+/* General Styles */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* ==========================
+   Swiper / Hero Slider
+   ========================== */
+.swiper {
+    width: 100%;
+    height: 665px;
+    position: relative;
+}
+
+.swiper-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Overlay */
+.swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.35); /* subtle dark overlay for readability */
+    z-index: 1;
+}
+
+/* Slide Content */
+.hero-slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Headings */
+.hero-slide-content h1 {
+    font-size: clamp(2rem, 5vw, 72px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph */
+.hero-slide-content p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 25px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Buttons */
+.hero-slide-content a {
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero-btn-primary {
+    background-color: #004494;
+    border: 2px solid #004494;
+    color: white;
+}
+
+.hero-btn-primary:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+}
+
+.hero2-btn-outline-light {
+    border: 2px solid white;
+    color: white;
+}
+
+.hero2-btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.7;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    opacity: 1;
+    width: 35px;
+}
+
+/* ==========================
+   Responsive
+   ========================== */
+@media (max-width: 1200px) {
+    .swiper {
+        height: 650px;
+    }
+}
+
+@media (max-width: 992px) {
+    .swiper {
+        height: 550px;
+    }
+
+    .hero-slide-content h1 {
+        font-size: clamp(2rem, 6vw, 50px);
+    }
+
+    .hero-slide-content p {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        height: 450px;
+    }
+
+    .hero-slide-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-slide-content p {
+        font-size: 1rem;
+    }
+
+    .hero-slide-content {
+        padding: 0 10px;
+    }
+
+    .hero-slide-content a {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .swiper-pagination-bullet {
+        width: 15px;
+        height: 3px;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper {
+        height: 350px;
+    }
+
+    .hero-slide-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-slide-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-slide-content a {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+
+    /* Stack buttons vertically on very small screens */
+    .hero-slide-content a {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,352 @@
+/* Custom CSS (shared with homepage, or extract to style.css) */
+:root {
+    --primary-color: #007bff; /* Bootstrap's primary blue */
+    --secondary-color: #6c757d;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+    --success-color: #28a745; /* Green for checkmarks */
+    --danger-color: #dc3545; /* Red for X-marks */
+}
+
+body {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+}
+
+.navbar-brand img {
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Hero Section for Business Internet */
+.business-internet-hero {
+    position: relative;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1573496359142-b8d87734b584?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+            no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-bottom: px; */
+}
+.business-internet-hero h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.business-internet-hero p {
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.business_internet_btn {
+    background-color: #004494;
+    border-color: #004494;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.business_internet_btn2 {
+    border: 2px solid;
+    border-color: #ffffff;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+/* Feature Boxes (reused from Home Internet, with minor adjustments) */
+.feature-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 95%;
+}
+.feature-box .icon {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.feature-box h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+.feature-box p {
+    color: #666;
+}
+
+/* Business Plan Cards (slightly different pricing structure/features) */
+.price-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price-card.recommended {
+    border: 3px solid var(--primary-color);
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.price-card h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.price-card .speed {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+}
+.price-card .price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.price-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+.price-card ul li {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 1.05rem;
+}
+.price-card ul li i {
+    color: var(--success-color); /* Use success color for checks */
+    margin-right: 8px;
+}
+/* Overriding for "Get Quote" button */
+.price-card .btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.price-card .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Value-Added Services */
+.value-added-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    height: 100%;
+}
+.value-added-card .icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.value-added-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.value-added-card p {
+    color: #666;
+}
+
+/* Footer (reused from homepage) */
+footer {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 50px 0 20px 0;
+    font-size: 0.9rem;
+}
+
+footer .footer-brand img {
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+footer h5 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .business-internet-hero {
+        height: 300px;
+        padding: 0 10px;
+    }
+
+    .business-internet-hero h1 {
+        font-size: 2rem;
+    }
+
+    .business-internet-hero p {
+        font-size: 0.95rem;
+    }
+
+    .business-internet-hero .business-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .price-card {
+        padding: 20px;
+    }
+
+    .feature-box {
+        padding: 20px;
+    }
+
+    .how-it-works-step .icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+    .business_internet_btn {
+        background-color: #004494;
+        border-color: #004494;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-size: 12px;
+    }
+
+    .business_internet_btn2 {
+        border: 2px solid;
+        border-color: #ffffff;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 25px;
+        border-radius: 50px;
+        font-size: 12px;
+    }
+
+    /* Shrink testimonial card */
+    .testimonial-card {
+        padding: 20px;
+        max-width: 100%; /* card takes most of screen width */
+        text-align: center;
+    }
+
+    /* Blockquote text smaller */
+    .testimonial-card blockquote {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    /* Customer name smaller */
+    .testimonial-card .customer-name {
+        font-size: 0.9rem;
+    }
+
+    /* Customer info smaller */
+    .testimonial-card .customer-info {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust carousel controls */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-size: 100% 100%;
+    }
+
+    .cta-section .btn {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-section p.lead {
+        font-size: 1rem;
+    }
+}
